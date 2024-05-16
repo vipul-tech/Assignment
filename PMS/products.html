@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="product.js" defer></script>
+    <style>
+        header{
+            background-color:purple;
+            padding: 30px;
+            text-align: center;
+            font-size: 25px;
+            color: white;
+            height: auto;
+        }
+        footer{
+            background-color:purple;
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color:#111;
+        }
+
+        .active{
+            background-color: chocolate;
+        }
+        table{
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            background-color: white;
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 1px solid #dddddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        tr:nth-child(odd){
+            background-color: #808080;
+        }
+        .container{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shopping Hub</h1>
+    </header>
+    <div>
+        <ul>
+            <li><a href="/home.html">Home</a></li>
+            <li><a class="active" href="/products.html">Product List</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h2 style="text-align: center;">Product List</h2>
+        <table id ="table">
+        </table>
+    </div>
+    <footer>
+        <marquee><h1>Thanks for visiting the store</h1></marquee>
+        <h3>Visit again</h3>
+    </footer>
+</body>
+</html>

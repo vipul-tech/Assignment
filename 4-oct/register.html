@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {background-color: powderblue;}
+    </style>
+</head>
+<body>
+    <br>  
+	<br>  
+	<form method="post" action = "/register.html"> 
+    	<div class="container">  
+    		<center><h1>Registration</h1></center>
+    		<hr>
+    		Account No :
+        		<input type="number" name="accountNo" size="8" required/> <br> <br>
+    		Customer Id :
+        		<input type="number" name="customerId" size="5" required/> <br> <br>
+			Name :        
+				<input type="text" name="name" size="15" required/> <br> <br>   
+			Age :
+        		<input type="number" name="age" size="2" required/> <br> <br>
+			Phone :
+				<input type="text" name="country code"  value="+91" size="2"/>   
+				<input type="text" name="mobileNo" size="10" required/> <br> <br>  
+			Address :  
+				<br>  
+				<textarea rows="5" name="address" value="address" cols="86" required>  </textarea>  <br> <br>  
+			Email:   
+				<input type="email" class="em" name="emailId" required/> <br> <br>  
+			Password:  
+				<input type="Password" name="password" required> <br> <br>  
+			Confirm Password:  
+				<input type="Password" name="confirmPassword" required> <br> <br>  
+	    		<button type="button" onclick="alert('Registered')">Register</button>
+	    		<h3> Already Registered? <a href="login.html">Login here</a></h3>
+		</div>	
+	</form>  
+</body>
+</html>

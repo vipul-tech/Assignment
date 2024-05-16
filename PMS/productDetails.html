@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- <script src="data.js" defer></script> -->
+    <script src="productDetails.js" defer></script>
+    <title>Document</title>
+    <style>
+        header{
+            background-color:purple;
+            padding: 30px;
+            text-align: center;
+            font-size: 25px;
+            color: white;
+            height: auto;
+        }
+        footer{
+            background-color:purple;
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+        
+        .container{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shopping Hub</h1>
+    </header>
+    
+    <div class="container my-4 text-center">
+        <h1>Product Details Screen</h1>
+    </div>
+    <div class="d-flex justify-content-center bg-light" id="container">
+        <form>
+            <label for="">Prod Id</label>
+            <input class="d-flex justify-content-center" type="text" id="inp-prodid"><br>
+            <label for="">Prod name</label>
+            <input class="d-flex justify-content-center" type="text" id="inp-prodname"><br>
+            <label for="">Price</label>
+            <input class="d-flex justify-content-center" type="text" id="inp-price"><br>
+        </form>
+
+    </div>
+    <div class="d-flex justify-content-center bg-light"> 
+        <input class=" btn btn-action btn-primary mx-2" onclick="location.href = 'home.html';" type="submit"  id="btn-home" value="Home">
+        <input class=" btn btn-action btn-primary mx-2" onclick="location.href = 'products.html';" type="submit"  id="btn-edit" value="Product List">
+        <input class=" btn btn-action btn-primary mx-2" onclick="location.href='addtocart.html'; "  type="submit"  id="cart" value="Add To Cart">
+    </div>
+    <br>
+    <footer>
+        <marquee><h1>Thanks for visiting the store</h1></marquee>
+        <h3>Visit again</h3>
+    </footer>
+</body>
+</html>

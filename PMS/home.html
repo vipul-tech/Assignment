@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background-color:purple;
+            padding: 30px;
+            text-align: center;
+            font-size: 25px;
+            color: white;
+            height: auto;
+        }
+        footer{
+            background-color:purple;
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color:#111;
+        }
+
+        .active{
+            background-color: chocolate;
+        }
+        
+        .mySlides {display:none;}
+        .column {
+            float: left;
+            width: 49%;
+            padding: 5px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        p{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shopping Hub</h1>
+    </header>
+    <div>
+        <ul>
+            <li><a class="active" href="/home.html">Home</a></li>
+            <li><a href="/products.html">Product List</a></li>
+            <li><a href="/cart.html">Cart</a></li>
+            <li><a href="/about.html">AboutUs</a></li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="column">
+            <p>Welcome to my shopping portal. We have various products available for sale on our website for 
+                the best prices and quality.
+            </p>
+            <p>
+                We sell electronics items like Tablet, Laptop, Mobile,USB Cable, Headset, Adapter, etc. of best
+                 quality and company. We have products of different price range. You can explore our website and order any products of your choice.
+            </p>
+            <p>
+                We have Laptop of companies like Dell, HP, Lenovo, Apple, Acer, and many more. You can find these products on my website and order of your choice.
+            </p>
+            <p>
+                We have Mobiles of companies like Redmi, Real Me, Lenovo, Apple, Nokia, Samsung, Oppo, Vivo and many more. You can find these products on my website and order of your choice.
+            </p>
+            <p>
+                We have best quality Tablets of companies like Dell, HP, Lenovo, Apple, Acer, and many more. You can find these products on my website and order of your choice.
+            </p>
+            <p>
+                We also have Adapters, Headset, Earphone, and more electronic items which you can and order from our website.
+                We also sell other electronic items like Smart TV, Desktop, Electric Iron, Washing Machine, Air Purifier, Refrigerator 
+                Invertor, Water Purofier and many more items. These products are of best quality. You can also find exciting discounts 
+                on these items. We have various offers during festive seasons and also on normal days.
+            </p>
+            <p>
+                There is a online facility for payment. You can pay by Card Swipe, Cash, Net Banking, Paytm, Phonepe, etc.
+            </p>
+            <p>
+                There is also a facility for home delivery for these electronic items. You can find free delivery for some products also. Thanks, Explore our website.
+            </p>
+        </div>
+        <div class="column">
+            <img class="mySlides" src="image/tablet.jpg" style="width:100%">
+            <img class="mySlides" src="image/mobile.jpg" style="width:100%">
+            <img class="mySlides" src="image/laptop.png" style="width:100%">
+        </div>
+    </div>  
+    <footer>
+        <marquee><h1>Thanks for visiting the store</h1></marquee>
+        <h3>Visit again</h3>
+    </footer>
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 4000); // Change image every 4 seconds
+        }
+        </script>
+</body>
+</html>

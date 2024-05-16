@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background-color:purple;
+            padding: 30px;
+            text-align: center;
+            font-size: 25px;
+            color: white;
+            height: auto;
+        }
+        footer{
+            background-color:purple;
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color:#111;
+        }
+
+        .active{
+            background-color: chocolate;
+        }
+        img a:hover{
+            background-color: chocolate;
+        }
+ 
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Maa Ambe Store</h2>
+        <h3>Welcome to Product Management System</h3>
+        <h5>The most trusted store in Nalanda</h5>
+    </header>
+    <div>
+        <ul>
+            <li><a class="active" href="/home.html">Home</a></li>
+            <li><a href="/electronics.html">Electronics Item</a></li>
+            <li><a href="/electric.html">Electric Item</a></li>
+            <li><a href="/stationary.html">Stationary Item</a></li>
+        </ul>
+    </div>
+    <div>
+        <a href="/electronics.html">
+            <img border="0" alt="Electronics" src="image/electronics/electronics.jpg" width="33%" height="auto">
+        </a>
+        <a href="/electric.html">
+            <img border="0" alt="Electric" src="image/electric/electric.jpg" width="33%" height="auto">
+        </a>
+        <a href="/stationary.html">
+            <img border="0" alt="Stationary" src="image/stationary/stationary.jpg" width="33%" height="auto">
+        </a>
+    </div>
+    <footer>
+        <marquee><h1>Thanks for visiting the store</h1></marquee>
+        <h3>Visit again</h3>
+    </footer>
+</body>
+</html>

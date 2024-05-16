@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function display(obj){
+            document.write("<br>Name : "+obj.name);
+            document.write("<br>Age : "+obj.age);
+            document.write("<br>Salary : "+obj.salary);
+            document.write("<br>Designation: "+obj.desig);
+            document.write("<br>");
+        }
+    </script>
+</head>
+<body>
+    <h1>JavaScript Object Demo</h1>
+    <hr>
+    <h2>Using Object Constructor</h2>
+    <script>
+        var obj1 = new Object();
+        obj1.name="Vipul Kumar";
+        obj1.age=22;
+        obj1.salary=40000;
+        obj1.desig="Trainee Analyst";
+
+        var obj2 = new Object();
+        obj2.name="Mukul Sharma";
+        obj2.age=22;
+        obj2.salary=40000;
+        obj2.desig="Trainee Analyst";
+
+        display(obj1);
+        display(obj2);
+    </script>
+    <hr>
+    <h2>Using Function Constructor</h2>
+    <script>
+        function Emp(name,age,salary,desig){
+            this.name=name;
+            this.age=age;
+            this.salary=salary;
+            this.desig=desig;
+        }
+        var e1 = new Emp("Rohan",22,45000,"Programmer");
+        var e2 = new Emp("Surbhi",21,50000,"Programmer");
+        display(e1);
+        display(e2);
+    </script>
+    <hr>
+    <h2>Using Json</h2>
+    <script>
+        e1 = {"name":"Mamta","age":25,"salary":47000,"desig":"Tester"}
+        e2 = {"name":"Sonam","age":23,"salary":41000,"desig":"Tester"}
+        
+        display(e1);
+        display(e2);
+    </script>
+    <hr>
+    <h2>Using Create method</h2>
+    <script>
+        e1 = {"name":"Mamta","age":25,"salary":47000,"desig":"Tester"}
+        e2 = Object.create(e1);
+        e2.name="Ramya";
+        e2.age=24;
+        display(e1);
+        display(e2);
+    </script>
+    <hr>
+    <h2>Using Singleton Pattern/anonymous class</h2>
+    <script>
+        var emp = new function(){
+            this.name="Hritik";
+            this.age=23;
+            this.salary=40000;
+            this.desig="Programmer";
+        }
+        display(emp);
+    </script>
+</body>
+</html>

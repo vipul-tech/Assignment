@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Abc(){
+            console.log("From Abc() function");
+        }
+
+        var ano = function(){
+            console.log("From Anonumous Function");
+        }
+
+        var arrow = ()=>{
+            console.log("From Arrow function");
+        }
+        function display(){
+            console.log(Abc);
+            console.log(ano);
+            console.log(arrow);
+        }
+    </script>
+</head>
+<body>
+    <h1>Function Demo</h1>
+    <button onclick="Abc()">Normal</button>
+    <button onclick="ano()">Anonymous</button>
+    <button onclick="arrow()">Arrow</button>
+    <button onclick="new Function(console.log('From Function Object'))">Object</button>
+    <button onclick="display()">Display</button>
+</body>
+</html>
